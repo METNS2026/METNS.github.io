@@ -24,12 +24,8 @@
   width: 66%;
   max-width: 66%;
 }
-</style>
-
-<h1>Summer Fair 2026</h1>
-  
-  <style>
-    .logo-hero {
+<style>
+.logo-hero {
   text-align: center;
   padding: 18px 0 20px;
   background: #fff7df;
@@ -57,13 +53,14 @@
   margin: 0;
   color: #10233f;
 }
-    .map-card {
+
+.map-card {
   overflow: hidden;
 }
 
 .map-layout {
   display: grid;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: 220px 1fr;
   gap: 16px;
   align-items: start;
 }
@@ -92,9 +89,20 @@
   max-width: 66%;
 }
 
+@media (max-width: 800px) {
+  .map-layout {
+    grid-template-columns: 75px 1fr;
+    gap: 8px;
+  }
+
   .map-key-panel {
-    max-width: 340px;
-    margin: 0 auto 14px;
+    padding: 4px;
+    border-width: 2px;
+    border-radius: 8px;
+  }
+
+  .map-key-img {
+    border-radius: 6px;
   }
 
   .smaller-map {
@@ -102,7 +110,7 @@
     max-width: 100%;
   }
 }
-  </style>
+</style>
 </head>
 
 <body>
