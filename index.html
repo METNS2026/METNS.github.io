@@ -4,7 +4,49 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>METNS Summer Fair 2026</title>
+.map-layout {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
 
+.map-key-panel {
+  width: 220px;
+  flex-shrink: 0;
+}
+
+.map-key-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.map-panel {
+  flex: 1;
+  text-align: center;
+}
+
+.smaller-map {
+  width: 66%;
+  max-width: 66%;
+}
+
+@media (max-width: 800px) {
+  .map-layout {
+    flex-direction: column;
+  }
+
+  .map-key-panel {
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .smaller-map {
+    width: 100%;
+    max-width: 100%;
+  }
+}
   <style>
     .logo-hero {
   text-align: center;
@@ -131,10 +173,7 @@
   </div>
 </div>
 
-    <br>
-    <a class="button" href="Draft%20Event%20Map.png" target="_blank">
-      Open Map Full Screen
-    </a>
+    
   </div>
 
   <div class="card">
