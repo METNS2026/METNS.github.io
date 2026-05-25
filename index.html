@@ -72,23 +72,36 @@
 @media (max-width: 800px) {
 
   .map-layout {
-    grid-template-columns: 75px 1fr;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 4px;
+    align-items: start;
   }
 
   .map-key-panel {
-    padding: 4px;
-    border-width: 2px;
-    border-radius: 8px;
+    width: 45px;
+    max-width: 45px;
+    padding: 2px;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 0;
   }
 
   .map-key-img {
-    border-radius: 6px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .map-panel {
+    width: 100%;
+    text-align: left;
   }
 
   .smaller-map {
-    width: 100%;
-    max-width: 100%;
+    width: 300%;
+    max-width: none;
+    height: auto;
   }
 
 }
