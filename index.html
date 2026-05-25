@@ -34,6 +34,56 @@
   margin: 0;
   color: #10233f;
 }
+    .map-card {
+  overflow: hidden;
+}
+
+.map-layout {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.map-key-panel {
+  background: #f7f7f7;
+  border: 3px solid #10233f;
+  border-radius: 14px;
+  padding: 10px;
+}
+
+.map-key-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.map-panel {
+  min-width: 0;
+  text-align: center;
+}
+
+.smaller-map {
+  width: 66%;
+  max-width: 66%;
+}
+
+@media (max-width: 800px) {
+  .map-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .map-key-panel {
+    max-width: 340px;
+    margin: 0 auto 14px;
+  }
+
+  .smaller-map {
+    width: 100%;
+    max-width: 100%;
+  }
+}
   </style>
 </head>
 
@@ -47,26 +97,38 @@
 
 <div class="container">
 
-  <div class="card">
+  <div class="card map-card">
   <h2>Outdoor Map</h2>
   <p>Use this map to find outdoor activities, refreshments, water stations and help points.</p>
-  <img src="outdoor-map.png" alt="Outdoor Summer Fair Map" class="map">
-  <br>
-  <a class="button" href="outdoor-map.png" target="_blank">Open Outdoor Map Full Screen</a>
+
+  <div class="map-layout">
+    <div class="map-key-panel">
+      <img src="map-key.png" alt="Map Key" class="map-key-img">
+    </div>
+
+    <div class="map-panel">
+      <img src="outdoor-map.png" alt="Outdoor Summer Fair Map" class="map smaller-map">
+      <br>
+      <a class="button" href="outdoor-map.png" target="_blank">Open Outdoor Map Full Screen</a>
+    </div>
+  </div>
 </div>
 
-<div class="card">
+<div class="card map-card">
   <h2>Indoor Map</h2>
   <p>Use this map to find indoor activities and performances.</p>
-  <img src="indoor-map.png" alt="Indoor Summer Fair Map" class="map">
-  <br>
-  <a class="button" href="indoor-map.png" target="_blank">Open Indoor Map Full Screen</a>
-</div>
 
-<div class="card">
-  <h2>Map Key</h2>
-  <p>This key applies to both maps.</p>
-  <img src="map-key.png" alt="Map Key" class="map">
+  <div class="map-layout">
+    <div class="map-key-panel">
+      <img src="map-key.png" alt="Map Key" class="map-key-img">
+    </div>
+
+    <div class="map-panel">
+      <img src="indoor-map.png" alt="Indoor Summer Fair Map" class="map smaller-map">
+      <br>
+      <a class="button" href="indoor-map.png" target="_blank">Open Indoor Map Full Screen</a>
+    </div>
+  </div>
 </div>
 
     <br>
