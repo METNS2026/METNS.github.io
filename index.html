@@ -88,10 +88,10 @@
 }
 
   .map-key-img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
+  width: 100%;
+  height: 300%;
+  object-fit: fill;
+}
 
   .map-panel {
     width: 100%;
@@ -131,7 +131,45 @@
 .schedule-item li {
   margin-bottom: 6px;
 }
+.activities-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  margin-top: 10px;
+}
 
+.activities-table th,
+.activities-table td {
+  border: 1px solid #10233f;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.activities-table th.food {
+  background-color: pink;
+}
+
+.activities-table th.quiet {
+  background-color: lightgreen;
+}
+
+.activities-table th.games {
+  background-color: purple;
+  color: white;
+}
+
+.activities-table th.partners {
+  background-color: yellow;
+}
+
+.activities-table th.other {
+  background-color: red;
+  color: white;
+}
+
+.activities-table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
 </style>
 </style>
 </head>
@@ -184,36 +222,110 @@
   </div>
 
   <div class="card">
-    <h2>Activities & Locations</h2>
+    <h2>Activities</h2>
 
-    <div class="grid">
+    <div class="card">
+  <h2>Activities & Locations</h2>
 
-      <div class="activity food">🍦 Ice Cream Truck</div>
-      <div class="activity food">☕ Coffee Truck</div>
-      <div class="activity food">🍰 Free Cake Table</div>
-
-      <div class="activity games">🏰 Bouncy Castle</div>
-      <div class="activity games">🎯 Target Shooting</div>
-      <div class="activity games">🏃 Obstacle Course</div>
-      <div class="activity games">🎮 Ninetino Games Room</div>
-      <div class="activity games">🧭 Treasure Hunt</div>
-
-      <div class="activity quiet">📖 Story Teller by Aideen</div>
-      <div class="activity quiet">🧸 Teddy Bear’s Picnic</div>
-      <div class="activity quiet">🌿 Sensory and Quiet Area</div>
-
-      <div class="activity service">🐴 Meet a Pony</div>
-      <div class="activity service">🚓 Garda Car</div>
-      <div class="activity service">🚒 Fire Engine</div>
-      <div class="activity service">💧 Water Station 1</div>
-      <div class="activity service">💧 Water Station 2</div>
-
-      <div class="activity performance">🎵 Music</div>
-      <div class="activity performance">🥋 ACE Martial Arts</div>
-  
-      <div class="activity performance">🎨 Arts & Crafts</div>
-
-      <div class="activity info">⭐ Reception Deck</div>
+  <table class="activities-table">
+    <thead>
+      <tr>
+        <th class="food">Food & Refreshments</th>
+        <th class="quiet">Lower Noise Areas</th>
+        <th class="games">Games and Fun Activities</th>
+        <th class="partners">Community Partners</th>
+        <th class="other">Other</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ice Cream Van</td>
+        <td>Sensory Area</td>
+        <td>Obstacle Course</td>
+        <td>Garda Car</td>
+        <td>Reception</td>
+      </tr>
+      <tr>
+        <td>Coffee Van</td>
+        <td>Quiet Area</td>
+        <td>Student Talent Display</td>
+        <td>Fire Engine</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Free Cake</td>
+        <td>Meet a Pony</td>
+        <td>Hula Hoop Game</td>
+        <td>Seed Library</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Water Stations</td>
+        <td>Storytelling by Aideen</td>
+        <td>Other Games</td>
+        <td>ACE Martial Arts</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Hook a Duck</td>
+        <td>3D Sculptures</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Mystery Box</td>
+        <td>Irish Traditional Band</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Bouncy Castle</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Target Practice</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Teddy Bear’s Picnic</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Arts and Craft</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Nintendo Games Room</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>Doodle Wall</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+    
       
 
     </div>
