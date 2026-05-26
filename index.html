@@ -77,7 +77,45 @@
   gap: 4px;
   align-items: start;
 }
+.activities-table {
+  width: 80%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  text-align: left;
+}
 
+.activities-table th,
+.activities-table td {
+  border: 1px solid #10233f;
+  padding: 8px;
+  vertical-align: top;
+}
+
+.activities-table th.food {
+  background-color: pink;
+}
+
+.activities-table th.quiet {
+  background-color: lightgreen;
+}
+
+.activities-table th.games {
+  background-color: purple;
+  color: white;
+}
+
+.activities-table th.partners {
+  background-color: yellow;
+}
+
+.activities-table th.other {
+  background-color: red;
+  color: white;
+}
+
+.activities-table tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
   .map-key-panel {
   width: 67px;
   max-width: 67px;
