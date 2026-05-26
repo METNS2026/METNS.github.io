@@ -34,6 +34,34 @@
   color: #10233f;
 }
 
+.welcome-card {
+  line-height: 1.7;
+}
+
+.welcome-card h2 {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.welcome-card h3 {
+  color: #10233f;
+  margin-top: 20px;
+}
+
+.welcome-card ul {
+  padding-left: 22px;
+}
+
+.welcome-card li {
+  margin-bottom: 10px;
+}
+
+.welcome-card hr {
+  margin: 24px 0;
+  border: none;
+  border-top: 2px dashed #cccccc;
+}
+
 .map-card {
   overflow: hidden;
 }
@@ -69,14 +97,27 @@
   max-width: 66%;
 }
 
-@media (max-width: 800px) {
-
-  .map-layout {
-  display: grid;
-  grid-template-columns: 67px 1fr;
-  gap: 4px;
-  align-items: start;
+.schedule-item {
+  background: #f7f7f7;
+  border-left: 6px solid #10233f;
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 10px;
 }
+
+.schedule-item h3 {
+  margin-top: 0;
+  color: #10233f;
+}
+
+.schedule-item ul {
+  margin: 8px 0 0 20px;
+}
+
+.schedule-item li {
+  margin-bottom: 6px;
+}
+
 .activities-table {
   width: 80%;
   margin: 10px auto;
@@ -116,20 +157,29 @@
 .activities-table tr:nth-child(even) td {
   background-color: #f2f2f2;
 }
+
+@media (max-width: 800px) {
+  .map-layout {
+    display: grid;
+    grid-template-columns: 67px 1fr;
+    gap: 4px;
+    align-items: start;
+  }
+
   .map-key-panel {
-  width: 67px;
-  max-width: 67px;
-  padding: 2px;
-  border-width: 1px;
-  border-radius: 5px;
-  margin: 0;
-}
+    width: 67px;
+    max-width: 67px;
+    padding: 2px;
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 0;
+  }
 
   .map-key-img {
-  width: 100%;
-  height: 300%;
-  object-fit: fill;
-}
+    width: 100%;
+    height: 300%;
+    object-fit: fill;
+  }
 
   .map-panel {
     width: 100%;
@@ -142,71 +192,9 @@
     height: auto;
   }
 
-}
-  .smaller-map {
-  width: 100%;
-  max-width: none;
-  height: auto;
-}
-
-.schedule-item {
-  background: #f7f7f7;
-  border-left: 6px solid #10233f;
-  padding: 14px;
-  margin-bottom: 16px;
-  border-radius: 10px;
-}
-
-.schedule-item h3 {
-  margin-top: 0;
-  color: #10233f;
-}
-
-.schedule-item ul {
-  margin: 8px 0 0 20px;
-}
-
-.schedule-item li {
-  margin-bottom: 6px;
-}
-.activities-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-  margin-top: 10px;
-}
-
-.activities-table th,
-.activities-table td {
-  border: 1px solid #10233f;
-  padding: 8px;
-  vertical-align: top;
-}
-
-.activities-table th.food {
-  background-color: pink;
-}
-
-.activities-table th.quiet {
-  background-color: lightgreen;
-}
-
-.activities-table th.games {
-  background-color: purple;
-  color: white;
-}
-
-.activities-table th.partners {
-  background-color: yellow;
-}
-
-.activities-table th.other {
-  background-color: red;
-  color: white;
-}
-
-.activities-table tr:nth-child(even) td {
-  background-color: #f2f2f2;
+  .activities-table {
+    width: 80%;
+  }
 }
 </style>
 </style>
@@ -319,9 +307,6 @@
   </div>
 
   <div class="card">
-    <h2>Activities</h2>
-
-    <div class="card">
   <h2>Activities & Locations</h2>
 
   <table class="activities-table">
@@ -423,14 +408,9 @@
   </table>
 </div>
     
-      
 
-    </div>
-  </div>
 
   <div class="card">
-    <h2>Schedule</h2>
-    <div class="card">
   <h2>Schedule</h2>
 
   <div class="schedule-item">
@@ -465,11 +445,11 @@
     <p><strong>Time:</strong> 4:00 P.M.</p>
     <p><strong>Location:</strong> Teddy Bear Picnic Area (near the staff car park)</p>
   </div>
-<div class="schedule-item">
-  <h3>💦 Water Gun Fight</h3>
-  <p><strong>Time:</strong> 4:30 P.M.</p>
-  <p><strong>Meeting Point:</strong> Outside the School Hall</p>
-</div>
+  <div class="schedule-item">
+    <h3>💦 Water Gun Fight</h3>
+    <p><strong>Time:</strong> 4:30 P.M.</p>
+    <p><strong>Meeting Point:</strong> Outside the School Hall</p>
+  </div>
 </div>
 
   <div class="card">
