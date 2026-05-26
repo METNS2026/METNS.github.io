@@ -160,22 +160,26 @@
 
 @media (max-width: 800px) {
   .map-layout {
-    display: block;
+    display: grid;
+    grid-template-columns: clamp(115px, 34vw, 140px) minmax(0, 1fr);
+    gap: 8px;
+    align-items: start;
   }
 
   .map-key-panel {
     width: 100%;
-    max-width: 340px;
-    margin: 0 auto 14px auto;
-    padding: 8px;
-    border-width: 2px;
-    border-radius: 10px;
+    max-width: 140px;
+    padding: 4px;
+    border-width: 1px;
+    border-radius: 6px;
+    margin: 0;
   }
 
   .map-key-img {
     width: 100%;
     height: auto;
     object-fit: contain;
+    display: block;
   }
 
   .map-panel {
@@ -192,6 +196,7 @@
   .activities-table {
     width: 80%;
   }
+}
 }
 }
 </style>
